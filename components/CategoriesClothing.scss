@@ -1,0 +1,25 @@
+.categories {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__category-name {
+        font-size: 20px;
+        margin: 15px 0px 7px 0px;
+    }
+
+    &__category-link {
+        text-decoration: none;
+        color: rgb(176, 176, 176);
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-family: 'Courier';
+    }
+
+    &__category-img {
+        max-width: 570px;
+        border-radius: 5px;
+        display: block;
+    }
+}

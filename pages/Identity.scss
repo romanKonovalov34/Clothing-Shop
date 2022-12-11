@@ -1,0 +1,121 @@
+.identity {
+
+    margin-top: 200px;
+
+    &__inner {
+        max-width: 400px;
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    &__entry-btns {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 20px;
+    }
+
+    &__btn {
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        padding-bottom: 10px;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 3px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        &:hover::after {
+            transition: all 0.3s;
+            background-color: black;
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        &_active {
+            &::after {
+                background-color: black;
+                width: 100%;
+            }
+        }
+    }
+
+    &__btn-title {
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    &__windows {
+        min-width: 800px;
+        display: flex;
+        justify-content: space-around;
+        transition: all 0.8s;
+    }
+
+    &__window {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 17px;
+        color: rgb(100, 100, 100);
+        border: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        outline: none;
+        position: relative;
+
+        &::after {
+            content: 'asdf';
+            position: absolute;
+        }
+    }
+
+    &__btn-accept {
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 30px 0px;
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+        font-size: 18px;
+        text-align: center;
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(100, 100, 100);
+        }
+
+        &:active {
+            background-color: black;
+        }
+    }
+
+    &__loading-logo {
+        font-weight: 400;
+        margin-top: 50px;
+        text-align: center;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+}
